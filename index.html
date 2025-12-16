@@ -249,13 +249,20 @@
       object-position: center 30%; /* adjust vertical crop: 0% = top, 50% = center */
       display: block;
     }
+
+    .hero-image {
+      width: 100%;
+      background: #000; /* optional: shows behind image if loading */
+    }
+    
+    .hero-image img {
+      width: 100%;     /* stretches image horizontally */
+      height: auto;    /* keeps correct aspect ratio */
+      display: block;  /* removes weird margins */
+    }
   </style>
 </head>
 <body>
-  
-  <div class="banner">
-    <img src="course_image.png" alt="Course Banner">
-  </div>
 
   <!-- Top navigation -->
   <header>
@@ -272,6 +279,10 @@
       </nav>
     </div>
   </header>
+
+  <div class="hero-image">
+    <img src="course_image.png" alt="Course Banner">
+  </div>
 
   <main>
     <!-- Hero / top block -->
