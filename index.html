@@ -252,12 +252,15 @@
 
     .hero-image {
       width: var(--max-width);
+      margin: 0 auto;          /* centers it like <main> */
+      padding: 0 1rem;         /* matches horizontal padding of main */
       background: #000; /* optional: shows behind image if loading */
     }
     
     .hero-image img {
       width: var(--max-width);     /* stretches image horizontally */
       height: 300px;    /* keeps correct aspect ratio */
+      object-fit: cover;
       display: block;  /* removes weird margins */
     }
   </style>
@@ -267,7 +270,7 @@
   <!-- Top navigation -->
   <header>
     <div class="nav-inner">
-      <div class="brand">Special Topics Course III LMP2392H</div>
+      <div class="brand">LMP2392H</div>
       <nav>
         <a href="#description">Description</a>
         <a href="#objectives">Learning Objectives</a>
